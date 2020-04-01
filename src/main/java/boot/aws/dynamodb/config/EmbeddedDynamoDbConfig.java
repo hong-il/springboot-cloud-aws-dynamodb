@@ -27,7 +27,7 @@ public class EmbeddedDynamoDbConfig {
         }
 
         try {
-            //AwsDynamoDbLocalTestUtils.initSqLite(); // (3)
+            AwsDynamoDbLocalTestUtils.initSqLite(); // (3)
             server = ServerRunner.createServerFromCommandLineArgs(new String[]{"-inMemory"});
             server.start();
             log.info("Start Embedded DynamoDB");
